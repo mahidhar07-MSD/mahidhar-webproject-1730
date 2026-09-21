@@ -12,23 +12,27 @@
       margin: 0;
       padding: 40px 20px;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       padding: 30px;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 20px;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
     }
+
     a {
       display: block;
       text-decoration: none;
@@ -39,23 +43,39 @@
       text-align: center;
       font-weight: 600;
     }
+
     a:hover {
       background: #1d4ed8;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
+      background: #111827;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <a class="back" href="../index.html">Back to Home</a>
     <h1>CSS Exercises</h1>
     <div class="grid" id="css-links"></div>
   </div>
 
   <script>
-    const cssFiles = Array.from({ length: 270 }, (_, i) => `${i + 1}.css`);
-    const container = document.getElementById('css-links');
+    const cssFiles = [];
+    for (let i = 1; i <= 270; i++) {
+      cssFiles.push(i + ".css");
+    }
+
+    const container = document.getElementById("css-links");
 
     cssFiles.forEach(file => {
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = file;
       link.textContent = file;
       container.appendChild(link);
