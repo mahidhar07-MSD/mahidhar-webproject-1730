@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors and Styling</title>
+  <style>
+    body {
+      background-color: #f8fafc;
+      font-family: Georgia, serif;
+      margin: 30px;
+      color: #1f2937;
+    }
+
+    h1 {
+      color: #2563eb;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .box {
+      background-color: #e0f2fe;
+      border: 3px solid #0ea5e9;
+      margin: 20px;
+      padding: 25px;
+      color: #0f172a;
+    }
+
+    #special {
+      background-color: #fef3c7;
+      border: 3px solid #f59e0b;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Styling Demo</h1>
+
+  <div class="box">
+    <p>This is a styled box using a class selector.</p>
+  </div>
+
+  <div id="special" class="box">
+    <p>This div uses an ID selector and also has a class selector.</p>
+  </div>
+</body>
+</html>

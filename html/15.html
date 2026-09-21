@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahidhar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background: #f8fafc;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Hello, I'm Mahidhar</h2>
+    <p>Web Developer | Designer | Learner</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <main class="container">
+    <section class="card" id="about">
+      <h2>About Me</h2>
+      <p>I create clean and user-friendly web experiences using HTML, CSS, and JavaScript. I love building responsive pages and interactive interfaces.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="portfolio-grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Landing page for a business website.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Responsive portfolio with modern styling.</p>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Interactive form and dashboard design.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Email: mahidhar@example.com | Phone: +91 9876543210</p>
+  </footer>
+</body>
+</html>

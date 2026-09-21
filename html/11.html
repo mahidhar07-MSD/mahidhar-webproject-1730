@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #eef2ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .internal-box {
+      background: #ffffff;
+      border: 2px solid #3b82f6;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px auto;
+      width: 70%;
+    }
+
+    .external-box {
+      background: #dbeafe;
+      border-left: 5px solid #1d4ed8;
+      padding: 20px;
+      margin: 20px auto;
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Internal and External CSS</h1>
+    </div>
+  </header>
+
+  <div class="internal-box">
+    <h2>Internal CSS Example</h2>
+    <p>This section is styled using CSS written inside the HTML file.</p>
+  </div>
+
+  <div class="external-box">
+    <h2>External CSS Example</h2>
+    <p>This section uses the external stylesheet named style.css.</p>
+  </div>
+</body>
+</html>
