@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Exercises</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      background: #f59e0b;
+      color: #111827;
+      padding: 12px 14px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+    }
+    a:hover {
+      background: #fbbf24;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Exercises</h1>
+    <div class="grid" id="js-links"></div>
+  </div>
+
+  <script>
+    const jsFiles = [
+      '01-display-hello-world.js', '02-arithmetic-operations.js', '03-largest-of-three.js',
+      '04-even-or-odd.js', '05-positive-negative-zero.js', '06-factorial.js', '07-fibonacci.js',
+      '08-prime.js', '09-palindrome.js', '10-reverse-number.js', '11-sum-of-digits.js',
+      '12-largest-smallest-array.js', '13-sort-array.js', '14-sum-average-array.js',
+      '15-functions.js', '16-arrow-functions.js', '17-string-methods.js', '18-array-methods.js',
+      '19-objects.js', '20-date-math.js', '21-dom-events.js', '22-change-text.js',
+      '23-change-background.js', '24-button-click.js', '25-show-hide.js', '26-change-image.js',
+      '27-digital-clock.js', '28-calculator.js', '29-guessing-game.js', '30-form-validation.js',
+      '31-validate-fields.js', '32-todo-list.js', '33-quiz-app.js', '34-counter.js',
+      '35-stopwatch.js', '36-countdown-timer.js', '37-advanced-js.js', '38-es6.js',
+      '39-spread-rest.js', '40-classes.js', '41-inheritance.js', '42-promises.js',
+      '43-fetch-api.js', '44-display-api-data.js', '45-dom-manipulation.js',
+      '46-form-validation.js', '47-string-length.js', '48-vowel-check.js',
+      '49-uppercase-lowercase.js', '50-search-array.js', '51-remove-duplicates.js',
+      '52-sum-array.js', '53-average-array.js', '54-count-words.js', '55-fizzbuzz.js',
+      '56-multiplication-table.js', '57-random-number.js', '58-date-format.js',
+      '59-compare-dates.js', '60-sort-strings.js', '61-object-keys.js',
+      '62-map-filter-reduce.js', '63-async-await.js', '64-email-validation.js',
+      '65-password-strength.js', 'test.js'
+    ];
+
+    const container = document.getElementById('js-links');
+
+    jsFiles.forEach(file => {
+      const link = document.createElement('a');
+      link.href = file;
+      link.textContent = file;
+      container.appendChild(link);
+    });
+  </script>
+</body>
+</html>
