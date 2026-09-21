@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML, CSS & JavaScript</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+        --accent: #f59e0b;
+        --text: #111827;
+        --muted: #4b5563;
+        --line: #dfe7f1;
+        --shadow: rgba(17, 24, 39, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef4ff 0%, #f8fafc 100%);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      .topbar {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        margin: 0 0 15px;
+        font-size: clamp(2.1rem, 4vw, 3.2rem);
+        line-height: 1.2;
+      }
+
+      .subheading {
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 12px 28px var(--shadow);
+        padding: 24px 22px;
+      }
+
+      .icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+        display: inline-block;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 1.6rem;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.75;
+        margin: 0 0 18px;
+        min-height: 90px;
+      }
+
+      .card a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 700;
+        color: #ffffff;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        border-radius: 10px;
+        padding: 12px 18px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .card a:hover {
+        transform: translateY(-1px);
+        opacity: 0.96;
+      }
+
+      .portfolio-card {
+        border-top: 4px solid var(--accent);
+      }
+
+      .html-card { border-top: 4px solid #10b981; }
+      .css-card { border-top: 4px solid #8b5cf6; }
+      .js-card { border-top: 4px solid #f59e0b; }
+
+      .footer-note {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.02rem;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+        .card p { min-height: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <h1>HTML, CSS & JavaScript</h1>
+        <p class="subheading">Practical Programs & Experiments</p>
+      </div>
+
+      <div class="cards">
+        <div class="card html-card">
+          <div class="icon">🌐</div>
+          <h2>HTML Programs</h2>
+          <p>Learn HTML fundamentals including headings, lists, tables, forms, images, links and more.</p>
+          <a href="html/1.html">View HTML Programs</a>
+        </div>
+
+        <div class="card portfolio-card">
+          <div class="icon">💼</div>
+          <h2>Portfolio</h2>
+          <p>Explore a personal portfolio built in pure HTML, featuring a clean layout and responsive design.</p>
+          <a href="html/15.html">View Portfolio</a>
+        </div>
+
+        <div class="card css-card">
+          <div class="icon">⚡</div>
+          <h2>CSS Programs</h2>
+          <p>Explore CSS selectors, layouts, Flexbox, Grid, animations, responsive design and more.</p>
+          <a href="css/index.html">View CSS Programs</a>
+        </div>
+
+        <div class="card js-card">
+          <div class="icon">🧠</div>
+          <h2>JavaScript Programs</h2>
+          <p>Practice JavaScript programming, DOM, events, forms, browser features and projects.</p>
+          <a href="javascript/index.html">View JavaScript Programs</a>
+        </div>
+      </div>
+
+      <div class="footer-note">Web Technology Practical Lab</div>
+    </div>
+  </body>
+</html>
