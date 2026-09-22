@@ -6,19 +6,22 @@
   <title>HTML5 Input Types</title>
 </head>
 <body>
-  <h1>HTML5 Input Types</h1>
+  <h1>HTML5 Form Input Types</h1>
   <form>
-    <label>Email:</label><br>
-    <input type="email" name="email" placeholder="name@example.com"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="name@example.com"><br><br>
 
-    <label>Date:</label><br>
-    <input type="date" name="date"><br><br>
+    <label for="dob">Date:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
 
-    <label>Number:</label><br>
-    <input type="number" name="quantity" min="1" max="10"><br><br>
+    <label for="age">Number:</label><br>
+    <input type="number" id="age" name="age" min="1" max="100"><br><br>
 
-    <label>Password:</label><br>
-    <input type="password" name="password"><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="search">Search:</label><br>
+    <input type="search" id="search" name="search"><br><br>
 
     <input type="submit" value="Submit">
   </form>

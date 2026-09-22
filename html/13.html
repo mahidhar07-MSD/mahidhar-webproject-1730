@@ -3,58 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout</title>
+  <title>Responsive Webpage</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: #f4f4f4;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+    .container { display: flex; gap: 20px; padding: 20px; }
+    .box {
+      flex: 1;
+      background: #e0f7fa;
+      border: 1px solid #0097a7;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 700px) {
+      .container { flex-direction: column; }
+      body { font-size: 14px; }
     }
   </style>
 </head>
 <body>
+  <h1>Responsive Layout</h1>
   <div class="container">
-    <div class="card">
-      <h2>Card 1</h2>
-      <p>Responsive design adjusts layout based on screen size.</p>
+    <div class="box">
+      <h2>Column 1</h2>
+      <p>This section changes layout on smaller screens using media queries.</p>
     </div>
-    <div class="card">
-      <h2>Card 2</h2>
-      <p>This page uses media queries for mobile and tablet devices.</p>
+    <div class="box">
+      <h2>Column 2</h2>
+      <p>Responsive design improves user experience on mobile and tablet devices.</p>
     </div>
-    <div class="card">
-      <h2>Card 3</h2>
-      <p>Learn CSS Grid and media queries to make websites responsive.</p>
+    <div class="box">
+      <h2>Column 3</h2>
+      <p>Media queries help adjust styles based on screen width.</p>
     </div>
   </div>
 </body>

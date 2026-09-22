@@ -4,29 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semantic Elements</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, nav, section, article, footer { padding: 20px; }
+    header { background: #0d6efd; color: white; }
+    nav { background: #e9ecef; }
+    nav a { margin-right: 15px; text-decoration: none; color: #0d1321; }
+    section { background: #f8f9fa; }
+    article { background: #fff; border: 1px solid #ddd; margin: 10px 0; }
+    footer { background: #212529; color: white; text-align: center; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
-    <nav>
-      <a href="#home">Home</a> |
-      <a href="#about">About</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>College News</h1>
   </header>
 
-  <section id="home">
-    <h2>Welcome</h2>
-    <p>This page uses semantic HTML elements.</p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Admissions</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Main Section</h2>
+
+    <article>
+      <h3>New Lab Setup</h3>
+      <p>The college has announced a new computer lab for innovation and research.</p>
+    </article>
+
+    <article>
+      <h3>Workshop on Web Technologies</h3>
+      <p>A workshop on HTML, CSS, and JavaScript will be conducted next week.</p>
+    </article>
   </section>
 
-  <article>
-    <h2>Article Title</h2>
-    <p>Semantic elements improve readability and accessibility for both developers and browsers.</p>
-  </article>
-
-  <footer id="contact">
-    <p>&copy; 2026 My Website</p>
+  <footer>
+    <p>&copy; 2026 College Portal</p>
   </footer>
 </body>
 </html>
